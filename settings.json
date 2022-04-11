@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "id": "video-mute-participant-plugin-1.0",
+      "srcURL": "plugins/video-mute-participant/video-mute-participant.plugin.package.json",
+      "enabled": true
+    }
+  ]
+}

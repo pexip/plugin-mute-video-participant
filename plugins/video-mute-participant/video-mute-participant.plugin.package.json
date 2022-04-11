@@ -1,0 +1,16 @@
+{
+    "id": "video-mute-participant-plugin-1.0",
+    "name": "video-mute-participant",
+    "description": "Mute the video from a selected participant",
+    "version": 1.0,
+    "srcURL": "video-mute-participant.plugin.js",
+    "allowUnload": true,
+    "platforms": ["web", "electron", "ios", "android"],
+    "participantRoles": ["chair"],
+    "menuItems": {
+        "participants": [{
+            "icon": "assets/images/icons.svg#video",
+            "action": "videoMuteParticipant"
+        }]
+    }
+}
