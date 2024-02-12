@@ -6,7 +6,7 @@
     participants$.subscribe(participants => {
       let state = {};
       participants.forEach(participant => {
-        if (participant.uuid === window.PEX.selfUUID) {
+        if (participant.uuid === window.PEX.selfUUID && participant.callType == 'video') {
           if (participant.isVideoMuted) {
             window.PEX.dispatchAction({type: '[Conference] Mute Camera'});
           } else {
